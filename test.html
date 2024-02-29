@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TESTS-true.xml</title>
+    <style type="text/css">
+        body {
+    background-color: white;
+    padding-bottom: 20em;
+    margin: 0;
+    min-height: 15cm;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: #007acc;
+    color: white;
+    padding: 3mm;
+    margin-top: 0;
+    margin-bottom: 1mm;
+}
+
+.footer {
+    font-style: italic;
+    font-size: small;
+    text-align: right;
+    padding: 1em;
+}
+
+.testsuite {
+    padding-bottom: 2em;
+    margin-left: 1em;
+}
+
+.proplist {
+    width: 100%;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+.proplist th {
+    background-color: silver;
+    width: 5em;
+    padding: 2px;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.proplist td {
+    padding: 2px;
+}
+
+.index-table {
+    width: 90%;
+    margin-left: 1em;
+}
+
+.index-table td {
+    vertical-align: top;
+    width: 50%;
+}
+
+.failure-index {
+
+}
+
+.toc {
+    margin-bottom: 2em;
+    font-family: monospace;
+}
+
+.stdio, pre {
+    min-height: 1em;
+    background-color: #1e1e1e;
+    color: silver;
+    padding: 0.5em;
+}
+.tdpre {
+    background-color: #1e1e1e;
+}
+
+.test {
+    margin-left: 0.5cm;
+}
+
+.outcome {
+    border-left: 1em;
+    padding: 2px;
+}
+
+.outcome-failed {
+    border-left: 1em solid lightcoral;
+}
+
+.outcome-passed {
+    border-left: 1em solid lightgreen;
+}
+
+.outcome-skipped {
+    border-left: 1em solid lightyellow;
+}
+
+.stats-table {
+}
+
+.stats-table td {
+    min-width: 4em;
+    text-align: right;
+}
+
+.stats-table .failed {
+    background-color: lightcoral;
+}
+
+.stats-table .passed {
+    background-color: lightgreen;
+}
+
+.matrix-table {
+    table-layout: fixed;
+    border-spacing: 0;
+    width: available;
+    margin-left: 1em;
+}
+
+.matrix-table td {
+    vertical-align: center;
+}
+
+.matrix-table td:last-child {
+    width: 0;
+}
+
+.matrix-table tr:hover {
+    background-color: yellow;
+}
+
+.matrix-axis-name {
+    white-space: nowrap;
+    padding-right: 0.5em;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    text-align: right;
+}
+
+.matrix-axis-line {
+    border-left: 1px solid black;
+    width: 0.5em;
+}
+
+.matrix-classname {
+    text-align: left;
+    width: 100%;
+    border-top: 2px solid grey;
+    border-bottom: 1px solid silver;
+}
+
+.matrix-casename {
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    padding-left: 1em;
+    border-bottom: 1px solid silver;
+}
+
+.matrix-result {
+    display: block;
+    width: 1em;
+    text-align: center;
+    padding: 1mm;
+    margin: 0;
+}
+
+.matrix-result-combined {
+    white-space: nowrap;
+    padding-right: 0.2em;
+    text-align: right;
+}
+
+.matrix-result-failed {
+    background-color: lightcoral;
+}
+
+.matrix-result-passed {
+    background-color: lightgreen;
+}
+
+.matrix-result-skipped {
+    background-color: lightyellow;
+}
+
+.matrix-even {
+    background-color: lightgray;
+}
+    </style>
+</head>
+<body>
+    
+<h1>
+    Test Report : TESTS-true.xml
+</h1>
+<a id="toc"></a>
+<table class="index-table">
+    <tr>
+        <td>
+            <ul class="toc">
+            
+                
+                <li>true.true
+                <ul>
+                    
+                    <li><a href="#025d70d8-881e-4cff-843d-b8bfbd93f581">Đăng nhập đúng tài khoản KH -- @1.1 </a></li>
+                    
+                    <li><a href="#b09e30b2-9b43-4a50-bacc-ee3389461b63">import đơn US -- @1.1 </a></li>
+                    
+                    <li><a href="#e4ef8b3e-67c0-4fa5-9ab1-c71bae5407b5">Vận đơn ở màn list đơn US -- @1.1 </a></li>
+                    
+                    <li><a href="#b0bbacb6-2a60-433e-b884-d88886f5aa34">Quét mã LB -- @1.1 </a></li>
+                    
+                    <li><a href="#3a9aa20b-c3bc-460a-8807-bf02c43d3c41">cho đơn vào kiện ny, fedex -- @1.1 </a></li>
+                    
+                    <li><a href="#679ae352-1e83-4e1f-bb08-dd94fe6c3804">cho kiện vào lô và đóng thành công LOẠI FEDEX -- @1.1 </a></li>
+                    
+                </ul>
+                </li>
+                
+            
+            </ul>
+        </td>
+        <td class="failure-index">
+            <ul class="toc">
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+    <div class="testsuite">
+        <h2>Test Suite: true.true</h2>
+        <a id="359b8381-8cf4-4f4b-a4fd-c6a8519d0b6c"></a>
+        
+        
+        <h3>Results</h3>
+        <table class="proplist">
+            <tr>
+                <th>Duration</th><td>235.537 sec</td>
+            </tr>
+            <tr>
+                <th>Tests</th><td>6</td>
+            </tr>
+            <tr>
+                <th>Failures</th><td>0</td>
+            </tr>
+        </table>
+
+        <div class="testclasses">
+            <h3>Tests</h3>
+            
+            <div class="testclass">
+                <h4>true.true</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="025d70d8-881e-4cff-843d-b8bfbd93f581"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Đăng nhập đúng tài khoản KH -- @1.1 </b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>28.417 sec</td></tr>
+                        
+                            <tr><th>Failed</th><td>None</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        <pre>None</pre>
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+
+  @dev
+  Scenario Outline: Đăng nhập đúng tài khoản KH -- @1.1 
+    Given Go to page https://ship.lionnix.net/sign-in ... passed in 24.932s
+    When Nhap username = m400@yopmail.com ... passed in 0.280s
+    And Set password = 123455 ... passed in 0.110s
+    And Click button login ... passed in 3.085s
+    Then Redirect to https://ship.lionnix.net/ ... passed in 0.010s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b09e30b2-9b43-4a50-bacc-ee3389461b63"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>import đơn US -- @1.1 </b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>11.987 sec</td></tr>
+                        
+                            <tr><th>Failed</th><td>None</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        <pre>None</pre>
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+
+  @dev
+  Scenario Outline: import đơn US -- @1.1 
+    Given Go to page https://ship.lionnix.net/packages?limit=25&amp;page=1 ... passed in 3.636s
+    When Click button nhap excel = Nhập Excel ... passed in 3.134s
+    And button tai len file US ... passed in 2.155s
+    Then text thanh cong ... passed in 3.061s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="e4ef8b3e-67c0-4fa5-9ab1-c71bae5407b5"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Vận đơn ở màn list đơn US -- @1.1 </b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>33.51 sec</td></tr>
+                        
+                            <tr><th>Failed</th><td>None</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        <pre>None</pre>
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+
+  @dev
+  Scenario Outline: Vận đơn ở màn list đơn US -- @1.1 
+    Given Go to page https://ship.lionnix.net/packages?limit=25&amp;page=1 ... passed in 3.130s
+    When Tim kiem ordernumber = 198 ... passed in 2.302s
+    And Click ordernumber ... passed in 3.132s
+    And Nhan tao tracking list ... passed in 3.099s
+    And button tao popup list ... passed in 15.783s
+    Then trang thai list = Pre-transit ... passed in 3.034s
+    And tracking list = N/A ... passed in 3.030s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b0bbacb6-2a60-433e-b884-d88886f5aa34"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>Quét mã LB -- @1.1 </b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>64.711 sec</td></tr>
+                        
+                            <tr><th>Failed</th><td>None</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        <pre>None</pre>
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+
+  @dev
+  Scenario Outline: Quét mã LB -- @1.1 
+    Given Go to page https://ship.lionnix.net/packages?limit=25&amp;page=1 ... passed in 2.495s
+    When Tim kiem ordernumber = 198 ... passed in 2.297s
+    And copy lb ... passed in 1.074s
+    And Go to page1 https://ship-admin.lionnix.net/sign-in ... passed in 39.532s
+    And Nhap username admin = admin@yopmail.com ... passed in 0.193s
+    And Set password admin = 123455 ... passed in 0.130s
+    And login admin ... passed in 3.076s
+    And Go to page1 https://ship-admin.lionnix.net/warehouse/scan-in ... passed in 3.330s
+    And bat dau quet ... passed in 3.070s
+    And dan ma LB ... passed in 6.372s
+    And xac nhan quet ... passed in 3.082s
+    Then kq quet = Thành công ... passed in 0.060s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="3a9aa20b-c3bc-460a-8807-bf02c43d3c41"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>cho đơn vào kiện ny, fedex -- @1.1 </b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>54.5 sec</td></tr>
+                        
+                            <tr><th>Failed</th><td>None</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        <pre>None</pre>
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+
+  @dev
+  Scenario Outline: cho đơn vào kiện ny, fedex -- @1.1 
+    Given Go to page https://ship-admin.lionnix.net/containers?limit=30&amp;page=1&amp;type=3 ... passed in 2.640s
+    When button tao kien ... passed in 3.112s
+    And chon kho NY ... passed in 6.144s
+    And chon label ngoai ... passed in 1.140s
+    And Tao kien ... passed in 3.110s
+    And Click vao kien ... passed in 4.201s
+    And bat dau quet vao kien ... passed in 3.075s
+    And Them don vao kien ... passed in 6.236s
+    And button dong kien ... passed in 6.246s
+    And Chon loai kich thuoc kien ... passed in 1.136s
+    And nhap can nang kien = 12 ... passed in 1.138s
+    And nhap can nang kien thuc te = 15 ... passed in 1.130s
+    And xac nhan dong kien ... passed in 10.089s
+    And Copy kien ... passed in 5.057s
+    Then Dong kien thanh cong = Đã đóng ... passed in 0.043s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="679ae352-1e83-4e1f-bb08-dd94fe6c3804"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>cho kiện vào lô và đóng thành công LOẠI FEDEX -- @1.1 </b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>42.412 sec</td></tr>
+                        
+                            <tr><th>Failed</th><td>None</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        <pre>None</pre>
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+
+@scenario.begin
+
+  @dev
+  Scenario Outline: cho kiện vào lô và đóng thành công LOẠI FEDEX -- @1.1 
+    Given Go to page https://ship-admin.lionnix.net/shipments?limit=30&amp;page=1 ... passed in 3.156s
+    When button tao lo ... passed in 3.082s
+    And chon kho lo ny ... passed in 2.149s
+    And Tao lo ... passed in 3.108s
+    And Click hub NY ... passed in 3.067s
+    And vao chi tiet lo ... passed in 3.192s
+    And bat dau quet vao lo ... passed in 3.089s
+    And Them kien vao lo ... passed in 11.237s
+    And button dong lo ... passed in 3.084s
+    And chuyen ups ... passed in 7.216s
+    Then Chuyen ups thanh cong = Đang giao ... passed in 0.033s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+<p class="footer">
+    Generated by junit2html
+</p>
+</body>
+</html>
